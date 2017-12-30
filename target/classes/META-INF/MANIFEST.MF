@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1514651568467
+Build-Jdk: 1.8.0_151
+Built-By: root
+Bundle-Description: A set of examples based on Apache Camel
+Bundle-ManifestVersion: 2
+Bundle-Name: Flume :: Activemq :: Camel Examples
+Bundle-SymbolicName: ch.abtomik.kura.activemq.camel-activemq
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: ch.abtomik.kura.activemq;uses:="org.eclipse.kura.configu
+ ration";version="0.0.1"
+Import-Package: org.apache.commons.io;version="[1.4,2)",org.eclipse.kura
+ .camel.runner;version="[1.1,2)",org.eclipse.kura.configuration;version=
+ "[1.1,2)",org.osgi.framework;version="[1.8,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.eclipse.k
+ ura.configuration.ConfigurableComponent"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/ch.abtomik.kura.activemq.CamelExampleConfigu
+ rableComponent.xml
+Tool: Bnd-3.3.0.201609221906
